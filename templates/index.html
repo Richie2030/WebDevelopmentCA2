@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>Slime Slayer</h1>
+    <h3>How To Play</h3>
+    <ul>
+        <li>Move with arrow keys</li>
+        <li>Shoot fireballs with spacebar</li>
+    </ul>
+
+    <p>
+        <button><a href="{{ url_for('game') }}">PLAY</a></button>
+    </p>
+          
+
+
+
+<!-- <section class="userID">
+
+    <section class="user">
+    <h1>Register</h1>
+    <form action="{{ url_for('user') }}" method="post" novalidate>  
+
+        {{ form.hidden_tag() }}
+
+        {{ form.user_id.label }}
+        {{ form.user_id() }}
+
+            {{ error }}
+        {% endfor %}
+
+        {% endif %}
+        
+        <br />
+        <p></p>
+
+        {{ form1.submit() }}
+
+    </form>
+    </section> -->
+
+{% endblock %}
